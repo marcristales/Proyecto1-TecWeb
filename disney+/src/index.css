@@ -7,7 +7,9 @@ html {
 }
 
 body {
-  background-color: #040714;
+  background-image: url('./assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #f9f9f9;
   font-family: Avenir-World-for-Disney-Demi,sans-serif;
   margin: 0;
