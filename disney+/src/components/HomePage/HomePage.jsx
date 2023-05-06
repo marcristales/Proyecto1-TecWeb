@@ -12,6 +12,7 @@ import StarWars from './../StarWars/StarWars'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { useState } from 'react'
 import Recommended from '../Recommended/Recommended'
+import Footer from '../Footer/Footer'
 
 const HomePage = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -33,27 +34,32 @@ const HomePage = () => {
     }
 
     return (
-        <div className={styles.main}>
-            <Header />
-            <div className={styles.carousel}>
-                <div className={styles.left} onClick={goToPreviousSlide}>
-                    <IoIosArrowBack className={styles.arrows} />
+        <>
+            <div className={styles.main}>
+                <Header />
+                <div className={styles.carousel}>
+                    <div className={styles.left} onClick={goToPreviousSlide}>
+                        <IoIosArrowBack className={styles.arrows} />
+                    </div>
+                    <div className={styles.right} onClick={goToNextSlide}>
+                        <IoIosArrowForward className={styles.arrows} />
+                    </div>
+                    <div className={styles.imageSlider}>
+                        <ImageSlider slides={slides} currentSlide={currentSlide} />
+                    </div>
                 </div>
-                <div className={styles.right} onClick={goToNextSlide}>
-                    <IoIosArrowForward className={styles.arrows} />
-                </div>
-                <div className={styles.imageSlider}>
-                    <ImageSlider slides={slides} currentSlide={currentSlide} />
-                </div>
+                <Companies />
+                <h3>Star Wars: Películas y series</h3>
+                <StarWars />
+                <h3>Novedades en Disney+</h3>
+                <Recommended index={0} />
+                <h3>Tendencias</h3>
+                <Recommended index={1} />
             </div>
-            <Companies />
-            <h3>Star Wars: Películas y series</h3>
-            <StarWars />
-            <h3>Novedades en Disney+</h3>
-            <Recommended index={0}/>
-            <h3>Tendencias</h3>
-            <Recommended index={1}/>
-        </div>
+            <div className={styles.footer}>
+                <Footer />
+            </div>
+        </>
     )
 }
 
