@@ -9,6 +9,7 @@ import starwarsvisionstitle from '../../assets/images/starwarsvisionstitle.png'
 import Header from '../Header/Header'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { useState } from 'react'
+import Companies from '../Companies/Companies'
 
 const HomePage = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -43,6 +44,7 @@ const HomePage = () => {
                     <ImageSlider slides={slides} currentSlide={currentSlide}/>
                 </div>
             </div>
+            <Companies />
         </div>
     )
 }
