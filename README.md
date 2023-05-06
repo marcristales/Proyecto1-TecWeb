@@ -1,9 +1,9 @@
-# 🌐 Proyecto 1 - TecWeb
+# :globe_with_meridians: Proyecto 1 - TecWeb
 Este proyecto es un clon de Disney+, trabajado en un entorno de React + Vite.
 
 <img src="disney+/src/assets/images/disneyplus.svg" width="400" height="400">
 
-## 🖥️ Tecnologías Utilizadas
+## :desktop_computer: Tecnologías Utilizadas
 * [React](https://es.react.dev/learn)
 * [Vite](https://vitejs.dev/guide/)
 * [ESLint](https://eslint.org/docs/latest/)
@@ -29,7 +29,7 @@ yarn dev
 ```
 > Abre tu navegador en **http://localhost:3000** para ver la aplicación.
 
-## 👷 Construcción
+## :construction_worker: Construcción
 Para construir la aplicación para producción, ejecuta:
 ```
 yarn build
