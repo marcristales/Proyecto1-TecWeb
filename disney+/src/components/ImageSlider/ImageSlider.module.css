@@ -1,0 +1,27 @@
+.imageContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.currentSlide {
+    z-index: 1;
+}
+
+.imageTitle {
+    position: absolute;
+    margin-top: 2.5vw;
+    margin-left: 6vw;
+    width: 28%;
+    z-index: 2;
+}
+
+.descripcion {
+    position: absolute;
+    margin-left: 6vw;
+    margin-bottom: 4vw;
+    font-size: 1vw;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
