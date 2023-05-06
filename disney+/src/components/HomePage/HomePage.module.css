@@ -21,7 +21,7 @@
 }
 
 .carousel {
-    margin-top: 100px;
+    margin-top: 10vh;
     width: 100%;
     position: relative;
 }
@@ -69,6 +69,7 @@
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px,
         rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+    margin: 0.6vw;
     cursor: pointer;
     display: block;
     transform: scale(1);
@@ -90,4 +91,8 @@
 
 .imageSlider:hover::before {
     border-color: white;
+}
+
+h3 {
+    margin: 0.6vw 0 0.6vw 0.6vw;
 }

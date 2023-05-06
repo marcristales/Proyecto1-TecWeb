@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
-import logo from '../../assets/images/disneyplus.svg'
-import pfp from '../../assets/images/userPFP.png'
+import logo from '@/assets/images/disneyplus.svg'
+import pfp from '@/assets/images/userPFP.png'
 import { useEffect, useState } from 'react'
 import {
     HiHome,
@@ -9,7 +9,7 @@ import {
     HiStar
 } from 'react-icons/hi'
 import { RiMovie2Fill, RiTvFill } from 'react-icons/ri'
-import HeaderItem from '../HeaderItem/HeaderItem'
+import HeaderItem from './../HeaderItem/HeaderItem'
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false)

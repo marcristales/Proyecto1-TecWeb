@@ -1,4 +1,4 @@
-import styles from './Cards.module.css'
+import styles from './CompanyCards.module.css'
 
 const Cards = ({ img, title, video }) => {
     return (

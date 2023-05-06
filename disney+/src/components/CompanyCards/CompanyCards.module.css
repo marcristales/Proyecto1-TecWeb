@@ -3,6 +3,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    gap: 100px;
 }
 
 .card {
@@ -12,11 +13,9 @@
     cursor: pointer;
     background-image: linear-gradient(rgb(58, 60, 74), rgb(36, 38, 50));
     box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
-    margin: 1vw;
+    margin: 0.6vw;
     border-radius: 0.6vw;
-    transform: scale(1);
-    width: 100%;
-    transition: all 0ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s !important;
 }
 
 .card::before {

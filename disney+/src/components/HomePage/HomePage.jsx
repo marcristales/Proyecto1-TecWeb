@@ -1,15 +1,17 @@
-import ImageSlider from '../ImageSlider/ImageSlider'
+import ImageSlider from './../ImageSlider/ImageSlider'
 import styles from './HomePage.module.css'
-import gotgcard from '../../assets/images/gotg.jpeg'
-import gotgtitle from '../../assets/images/gotg2title.png'
-import mandaloriancard from '../../assets/images/mandalorian.jpeg'
-import mandaloriantitle from '../../assets/images/mandaloriantitle.png'
-import starwarsvisionscard from '../../assets/images/starwarsvisions.jpeg'
-import starwarsvisionstitle from '../../assets/images/starwarsvisionstitle.png'
-import Header from '../Header/Header'
+import gotgcard from '@/assets/images/gotg.jpeg'
+import gotgtitle from '@/assets/images/gotg2title.png'
+import mandaloriancard from '@/assets/images/mandalorian.jpeg'
+import mandaloriantitle from '@/assets/images/mandaloriantitle.png'
+import starwarsvisionscard from '@/assets/images/starwarsvisions.jpeg'
+import starwarsvisionstitle from '@/assets/images/starwarsvisionstitle.png'
+import Header from './../Header/Header'
+import Companies from './../Companies/Companies'
+import StarWars from './../StarWars/StarWars'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { useState } from 'react'
-import Companies from '../Companies/Companies'
+import Recommended from '../Recommended/Recommended'
 
 const HomePage = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -35,16 +37,22 @@ const HomePage = () => {
             <Header />
             <div className={styles.carousel}>
                 <div className={styles.left} onClick={goToPreviousSlide}>
-                    <IoIosArrowBack className={styles.arrows}/>
+                    <IoIosArrowBack className={styles.arrows} />
                 </div>
                 <div className={styles.right} onClick={goToNextSlide}>
-                    <IoIosArrowForward className={styles.arrows}/>
+                    <IoIosArrowForward className={styles.arrows} />
                 </div>
                 <div className={styles.imageSlider}>
-                    <ImageSlider slides={slides} currentSlide={currentSlide}/>
+                    <ImageSlider slides={slides} currentSlide={currentSlide} />
                 </div>
             </div>
             <Companies />
+            <h3>Star Wars: Películas y series</h3>
+            <StarWars />
+            <h3>Novedades en Disney+</h3>
+            <Recommended index={0}/>
+            <h3>Tendencias</h3>
+            <Recommended index={1}/>
         </div>
     )
 }

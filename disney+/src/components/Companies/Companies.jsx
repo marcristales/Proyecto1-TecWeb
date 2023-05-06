@@ -1,10 +1,10 @@
 import styles from './Companies.module.css'
-import disney from '../../assets/images/disneycard.png'
-import pixar from '../../assets/images/pixarcard.png'
-import marvel from '../../assets/images/marvelcard.png'
-import starwars from '../../assets/images/starwarscard.png'
-import natgeo from '../../assets/images/natgeocard.png'
-import Cards from '../Cards/Cards'
+import disney from '@/assets/images/disneycard.png'
+import pixar from '@/assets/images/pixarcard.png'
+import marvel from '@/assets/images/marvelcard.png'
+import starwars from '@/assets/images/starwarscard.png'
+import natgeo from '@/assets/images/natgeocard.png'
+import CompanyCards from './../CompanyCards/CompanyCards'
 
 const Companies = () => {
 
@@ -19,7 +19,7 @@ const Companies = () => {
     return (
         <div className={styles.viewers}>
             {cards.map((item) => (
-                <Cards img={item.img} title={item.title} video={item.video} />
+                <CompanyCards img={item.img} title={item.title} video={item.video} />
             ))}
         </div>
     )
