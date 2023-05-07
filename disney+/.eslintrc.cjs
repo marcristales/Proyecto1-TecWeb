@@ -29,4 +29,4 @@ module.exports = {
       ],
       "prettier/prettier": ["warn", {"semi":false, "tabWidth": 4}]
     },
-  };
+  }
